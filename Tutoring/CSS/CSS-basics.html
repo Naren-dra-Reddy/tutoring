@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Basics</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <style>
+       
+
+          
+            /* h1:hover{
+                color: blue;
+            } */
+            a:link{
+                color: blueviolet;
+            }
+            a:visited{
+                color: brown;
+            }
+            a:hover{
+                color: coral;
+            }
+            a:active{
+                color: aqua;
+            }
+     
+            #paraID::first-line{
+                color: blue;
+            }
+            p::first-letter{
+                color: red;
+            }
+            #headingID{
+                color:blue
+            }
+            .headingClass{
+                color: yellow;
+            }
+            h1{
+              color: red;
+            }
+            /* h1::before{
+                content: "this is before ";
+            } */
+            /* #headingID::after{
+                content: url(sunset.jpg)
+            } */
+            /* #headingID{
+                color: chartreuse;
+            } */
+            /* div > p{
+                background-color: blueviolet;
+            } */
+            /* div + h1 {
+                background-color: red;
+            } */
+            /* p ~ div{
+                background-color: yellow;
+            } */
+            /* a[target~="_self"]{
+                background-color: yellow;
+            } */
+          p{
+              padding: 10px 20px 10px 20px;
+              border: 1px solid blue;
+              text-align: justify;
+              /* font-size: 30px; */
+              /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+          }
+          /* h1{
+              border: 5px solid red;
+              margin: 100px 200px 100px 300px;
+              color: blue;
+              text-align: right;
+
+          } */
+          ul{
+              list-style-type: circle;
+          }
+          ol{
+              list-style-type: upper-roman;
+          }
+          table, th, td{
+              text-align: center;
+              border: 1px solid red;
+              border-collapse: collapse;
+          }
+          .divcontainer{
+              border: 1px solid black;
+              height: 1000px;
+          }
+          .divClass{
+              border: 1px solid red;
+              width: 100px;
+              height: 100px;
+              display: inline-block;
+          }
+    
+         /* position - static, relative, absolute, fixed, sticky */
+         #div3{
+             position: sticky;
+             top: 0;
+         }
+
+        </style>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     
+        <h1 id="headingID" class="headingClass">This is a heading</h1>
+         <!--   
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p id="paraID">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <a href="#" class="bgClass" target="_blank">This is a test link</a>
+        <a href="#" class="bgClass" target="_self">This is a test link without target</a>
+      
+        <div>
+            <span class="bgClass"> This is a span text</span>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+        <img src="sunset.jpg" alt="sunset.jpg" title="sunset image">
+        <img alt="flower.jpg" title="flower image">
+        <p>This is a p element after div</p>
+        <p>This is a p element after p</p>
+        <h1>This is a heading</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        <table>
+            <thead>
+                <div>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                    </tr>
+                </div>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Nancy</td>
+                    <td>Daviolo</td>
+                    <td>Bangalore</td>
+                    <th>46578697897</th>
+                </tr>
+                <tr>
+                    <td>Daviolo</td>
+                    <td>Bangalore</td>
+                    <th>46578697897</th>
+                </tr>
+                <tr>
+                    <td>Daviolo</td>
+                    <td>Bangalore</td>
+                    <th>46578697897</th>
+                </tr>
+            </tbody>
+           <tfoot>
+               <tr>
+                   <td>Total</td>
+                   <td colspan="3">3</td>
+               </tr>
+           </tfoot>
+        </table>  -->
+        
+        <div class="divcontainer">
+        <div id="div1" class="divClass">1</div>
+        <div id="div2" class="divClass">2</div>
+        <div id="div3" class="divClass">3</div>
+        <div id="div4" class="divClass">4</div>
+        </div>
+        <div style="height: 1000px;">
+            hello
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+<!-- CSS - cascading style sheet -->
+<!-- why to use - To style the HTML documents -->
+<!-- How to use - 3 ways to write CSS - 
+External stylesheet - .css, link using <link> tag
+Internal stylesheet - <style></style>
+Inline styles - style attribute -->
+
+<!-- syntax - selector{property:value} -->
+
+<!-- Inline style >> Internal, External -->
+
+<!-- selectors --
+Simple selectors - element, class, id
+combination selectors - div p - selects all the p elements inside div
+                        div > p - selects all the p elements whose immediate parent is div,
+                        div + p - selects the p element immediately after div
+                        p ~ div - selects all the div elements which are after a p tag
+Pseudo class selector - :hover, :link, :visited, :active, :first-child, :last-child
+Pseudo Element selector - ::first-line, ::first-letter, ::before, ::after
+Attribute selector - select using attribute or value -->
+
+<!-- CSS Box model  -->
+
+<!-- Specificity
+
+Animation
+transform
+name animation -->
+
+<!-- position -> absolute - relative to the element's parent's position
+            relative - relative to the element's normal/old position -->
